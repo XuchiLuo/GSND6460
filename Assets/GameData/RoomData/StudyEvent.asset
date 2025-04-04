@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: StudyEvent
   m_EditorClassIdentifier: 
   roomIcon: {fileID: 540803829919948875, guid: f359aa73e983f4e41b90b30769734529, type: 3}
-  roomType: 1
+  roomType: 2
   sceneToLoad:
-    m_AssetGUID: 
+    m_AssetGUID: 674b63efe812b405984ceee7fc352648
     m_SubObjectName: 
     m_SubObjectGUID: 
     m_SubObjectType: 
