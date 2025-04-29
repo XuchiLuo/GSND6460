@@ -8,6 +8,9 @@ public class Room : MonoBehaviour
     public RoomDataSO roomData;
     public RoomState roomState;
 
+    [Header("Broadcast")]
+    public ObjectEventSO loadRoomEvent;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
@@ -20,6 +23,7 @@ public class Room : MonoBehaviour
     private void OnMouseDown()
     {
         Debug.Log("Clicked on room: " + roomData.roomType);
+        loadRoomEvent.RaiseEvent(roomData,this);
     }
     public void SetupRoom(int column, int line, RoomDataSO roomData)
     {
